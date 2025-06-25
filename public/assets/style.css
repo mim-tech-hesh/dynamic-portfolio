@@ -1,0 +1,108 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:10px;
+    font-family:'Montserrat',sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#one{
+    background-image:url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.inprocorp.com%2Fsamples%2Fcolor-palettes%2Fphotopolymer-solid-colors%2F&psig=AOvVaw1qMHgLKbg32n5qJAhtNxow&ust=1750870208982000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMD2w_nBio4DFQAAAAAdAAAAABAE);
+    background-size:cover;
+    background-position:top center;
+}
+
+#one h1{
+    display:block;
+    width:fit-content;
+    font-size:4ren;
+    position:relative;
+    color:black(0,0,0);
+    animation:text_reveal .5s ease forwards;
+    animation-delay:1.5s;
+}
+
+#one h1:nth-child(1){
+    animation-delay:1.5s;
+}
+#one h1:nth-child(2){
+    animation-delay:2.5s;
+}
+#one h1:nth-child(3){
+    animation-delay:3.5s;
+}
+
+#one h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%
+    width:0%;
+    background-color: rgb(255,255,255);
+    animation:text_reveal_box 1s ease;
+    animation-delay:1s;
+
+}
+
+#one h1:nth-child(1)span{
+    animation-delay:1s;
+}
+#one h1:nth-child(2)span{
+    animation-delay:2s;
+}
+#one h1:nth-child(3)feSpecularLighting{
+    animation-delay:3s;
+}
+
+#one .cta{
+    display:inline-block;
+    padding:10px 30px;
+    color:white;
+    background-color:transparent;
+    border:2px solid rgb(0,0,0);
+    font-size:2ren;
+    text-transform:uppercase;
+    letter-spacing: 0.1rem;
+    margin-top:30px;
+    transition:0.3s ease;
+    transition-property:background-color,color;
+
+}
+
+#one .cta:hover{
+    color:white;
+    background-color:black;
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+
+    }
+    100%{
+        width:0;
+        left:100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color:black;
+    }
+}
