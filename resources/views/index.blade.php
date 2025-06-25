@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: #f0f0f0;
+  background: white;
 }
 
 .container {
